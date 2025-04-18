@@ -1,0 +1,13 @@
+com/camel/odoo/SAPService.class
+com/camel/odoo/OdooService.class
+com/camel/odoo/ERPNextServiceTest.class
+com/camel/odoo/TestOdooService.class
+com/camel/odoo/ERPService.class
+com/camel/odoo/DynamicERPRouteBuilder.class
+com/camel/odoo/ERPServiceRegistry.class
+com/camel/odoo/OdooService$1.class
+com/camel/odoo/CamelApplication.class
+com/camel/odoo/ERPNextService.class
+com/camel/odoo/CryptoUtil.class
+com/camel/odoo/CamelApplication$1.class
+com/camel/odoo/processor/DynamicERPProcessor.class
