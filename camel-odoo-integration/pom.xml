@@ -96,32 +96,26 @@
             <version>5.2.3</version>
         </dependency>
     </dependencies>
-    <build>
-        <finalName>camel-odoo-integration-1.0-SNAPSHOT</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.4.1</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.apache.camel.main.Main</mainClass>
-                                </transformer>
-                            </transformers>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+   <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-clean-plugin</artifactId>
+      <version>3.1.0</version>
+      <configuration>
+        <filesets>
+          <fileset>
+            <directory>${project.build.directory}</directory>
+            <includes>
+              <include>original-*.jar</include>
+            </includes>
+          </fileset>
+        </filesets>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
 
 
 
